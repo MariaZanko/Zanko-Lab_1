@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Олена Петренко — портфоліо</title>
+
+</head>
+
+    <style>
+
+    body {
+      font-family: Georgia, serif;
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.5;
+    }
+    .btn {
+      background: #2050a0;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      display: inline-block;
+      cursor: pointer;
+      margin: 4px 0;
+    }
+    .status-error { color: #d22; font-weight: bold; }
+
+    .status-ok { color: #2a8; font-weight: bold; }
+
+    .avatar { width: 160px; height: 160px; border-radius: 50%; }
+    a { color: #2050a0; text-decoration: underline; }
+    h2 { border-bottom: 1px solid #ddd; padding-bottom: 6px; margin-top: 2rem; }
+  </style>
+
+
+<body>
+    <header>
+
+  <h1>Привіт, мене звати Олена</h1>
+  <p>Я студентка 1-го курсу ІПЗ у НаУКМА.</p>
+  <p>Тут — мої проєкти і контакти. </p>
+
+  <img id="avatar" alt="Олена Петренко" class="avatar" src="https://static.vecteezy.com/system/resources/thumbnails/004/899/680/small/beautiful-blonde-woman-with-makeup-avatar-for-a-beauty-salon-illustration-in-the-cartoon-style-vector.jpg"/>
+ 
+  </header>
+
+
+  <main>
+    <section>
+ <h2>Освіта</h2>
+
+  <ul>
+
+    <li>НаУКМА, бакалавр ІПЗ, 2027</li>
+    <li>Середній бал: 4.7</li>
+    <li>Спеціалізація: веб-розробка</li>
+    <li> Рік випуску: 2027</li>
+
+  </ul>
+
+    </section>
+
+<section>
+  <h3>Проєкти</h3>
+
+  <h3>Інтернет-магазин випічки</h3>
+
+  <p>Платформа для замовлення домашньої випічки з доставкою.</p>
+
+  <p>Статус: <span class="status-error">проблеми з оплатою</span>
+     <span class="status-ok">доставка працює</span>
+    
+    </p>
+</section>
+
+
+  <section>
+  <h3>Технології:</h3>
+
+  <ul>
+<li>React</li>
+<li>Node.js</li>
+<li>TypeScript</li>
+<li> PostgreSQL</li>
+    </ul>
+    </section>
+
+
+    <section>
+  <h3>Календар університетських подій</h3>
+
+  <p>Веб-застосунок для слідкування за подіями факультету. Інтегрований з Google Calendar.</p>
+
+  <img style = "border-radius: ;" alt ="Скріншот календаря" src="https://img.magnific.com/premium-vector/ukrainian-2026-year-calendar-bold-font-vector-illustration-ukraine-ua_186380-6275.jpg"/>
+  
+    </section>
+
+
+  <section>
+  <h3>Контакти</h3>
+
+  <p>Зв'яжіться зі мною:</p>
+
+  <button type="button" onclick="alert('email')">Написати email</button>
+  <button type = "button" onlick ="alert('Дзвонок')">Зателефонувати</button>
+
+  </section>
+
+<section>
+
+  <h2>Підписка на новини</h2>
+
+  <p>Залиште email і отримуйте щотижневі оновлення про мої проєкти:</p>
+
+
+  <form>
+<label for="email-input">Вкажіть ваш email</label>
+<input id="email-input" type="email" placeholder="Ваш email" required>
+<input type="checkbox" name="subscribe" value="yes"> Я хочу отримувати оновлення</label><br><br>
+
+
+  <button type="submit" class = "btn">Підписатися</button>
+
+   </form>
+  </section>
+
+
+  <section>
+  <h3>Соцмережі</h3>
+
+  <p>
+
+    <nav>
+        <ul>
+            <li><a href="https://github.com/olenapetrenko" target="_blank" rel = 'noopener noreferrer'>GitHub</a></li>
+         <li><a href="https://linkedin.com/in/olenapetrenko" target="_blank" rel = 'noopener noreferrer'>LinkedIn</a></li>
+            <li><a href="https://twitter.com/olenap" target="_blank" rel = 'noopener noreferrer'>Twitter</a></li>
+        </ul>
+
+    </nav>
+    
+  </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <hr>
+  <p style="text-align: center; color: #888;">&copy; 2026 Олена Петренко</p>
+
+  </footer>
+
+
+
+</body>
+</html>
+
+
+
+<!-- README.md: Виправили помилки в коді, додали стилі та структуру для візуала.
+Ми змінили назви проєктів з h2 на h3.
+Це потрібно для логічної структури сторінки
+ щоб допоміжні технології та пошукові роботи розуміли підпорядкованість розділів.
+
+target="_blank" додано атрибут rel="noopener noreferrer".
+ Це захищає сайт від вразливостей, які виникають при відкритті нових вкладок на сторонніх ресурсах (просто для безпеки користувача)
+ об'єднали input та label через атрибути id та for.
+  Це дозволяє користувачам натискати на текст біля поля, а скрінрідерам мати змогу озвучувати призначення поля.
+
+Атрибути alt для зображень (для людей з обмеженим зором).
+
+<button> з href, без onclick, тому що <a> вже є інтерактивним елементом, і додавання onclick може створити проблеми з доступністю та SEO.
+    
+список через ul для візуала
+
+без html lang програма не буде правильно працювати 
+
+button з атрибутом type, тому що це кнопка для взаємодії, а не посилання
+  -->
